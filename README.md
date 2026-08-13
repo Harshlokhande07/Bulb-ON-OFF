@@ -15,10 +15,28 @@ A simple and interactive web project built using **HTML** and **JavaScript DOM M
 
 ---
 
-## 📂 Project Structure
+## 💻 Live Visual Representation
+
+Here is how the project functions in a web browser. When a user clicks the **Turn On** button, the JavaScript swaps the image to the lit bulb. Clicking **Turn Off** restores the unlit bulb image.
+
 ```text
-bulb-project/
-│
-├── index.html     # Main HTML structure with buttons and image
-├── bulb.js        # JavaScript file containing turnOn() and turnOff() logic
-└── README.md      # Project documentation
+       +---------------------------------------------+
+       |             [ 💡 Bulb Project ]             |
+       +---------------------------------------------+
+                              |
+                     +-----------------+
+                     |                 |
+                     |      OFF        |  <-- Default State (bulb.off.png)
+                     |                 |
+                     +-----------------+
+                        /           \
+                       /             \
+            [ Turn ON ]               [ Turn OFF ]
+            (Click event)             (Click event)
+                  |                         |
+                  v                         v
+       +-----------------+       +-----------------+
+       |                 |       |                 |
+       |       ON        |       |      OFF        |  <-- Switched State (bulb.on.png)
+       |                 |       |                 |
+       +-----------------+       +-----------------+
